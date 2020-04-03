@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <h1>{{ headline }}</h1>
+
+    <form action="{{ url_for('modif')}}" method="post">
+        <input type="hidden" name="var" value="{{var}}">
+        <input type="text" name="val" placeholder="{{val}}">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

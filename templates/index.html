@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>{{ headline }}</h1>
+
+        <ul>
+        {% for name in names %}
+            <li>{{ name }}</li>
+        {% endfor %}
+        </ul>
+        {% if new_year %}
+            <h1>Yes! Happy New Year!</h1>
+        {% else %}
+            <h1>No.</h1>
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <h1>{{ headline }}</h1>
+    <h2>{{ var }} = {{val}}</h2>
+    <ul>
+    {% for var, val in variables.items() %}
+        <li>
+            {{var}} = {{val}} <a href="{{ url_for('variable', var=var) }}">modifier</a>
+        </li>
+    {% endfor %}
+    </ul>
+    </form>
+</body>
+</html>

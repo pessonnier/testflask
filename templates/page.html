@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>{{ headline }}</h1>
+
+        {% for page in pages %}           
+        <a href="{{ url_for(page) }}">vers {{page}}</a>
+        </br>
+        {% endfor %}
+        
+    </body>
+</html>
